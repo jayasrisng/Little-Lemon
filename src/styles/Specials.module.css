@@ -1,0 +1,38 @@
+.specials {
+  font-family: "Markazi";
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.specialsContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.specialsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.specialsHeader h2 {
+  font-size: 2.5rem;
+}
+.specialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Screens between 540px and 768px */
+@media (min-width: 540px) and (max-width: 768px) {
+  .specialsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile screens */
+@media (max-width: 540px) {
+  .specialsGrid {
+    grid-template-columns: 1fr;
+  }
+}

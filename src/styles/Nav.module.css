@@ -1,0 +1,140 @@
+.nav {
+  padding: 1rem;
+}
+
+.navContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo {
+  width: 220px;
+}
+
+.navContainer img {
+  width: 100%;
+}
+
+.navContainer ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.navContainer ul li {
+  font-size: 1.1rem;
+}
+
+.navContainer li a {
+  color: var(--font-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.navContainer ul li a:hover {
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+
+/* Hamburger button */
+.buttonContainer {
+  display: none;
+}
+
+.button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.25s;
+  position: relative;
+  z-index: 40;
+  border: none;
+  background: transparent;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  border: none;
+  background: var(--font-color);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburgerMiddle {
+  transform: translateY(7px);
+}
+
+.hamburgerBottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburgerTop {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburgerMiddle {
+  display: none;
+}
+
+.open .hamburgerBottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.menu {
+  background-color: var(--light-gray-color);
+  width: 240px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  min-height: 100vh;
+  padding: 0.25rem 0;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.menu a {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.menu a:hover {
+  color: var(--secondary-color);
+}
+
+/* Mobile screens */
+@media (max-width: 800px) {
+  .navContainer ul {
+    display: none;
+  }
+
+  .buttonContainer {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}

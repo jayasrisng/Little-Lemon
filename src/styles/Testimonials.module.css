@@ -1,0 +1,43 @@
+.testimonials {
+  background: var(--primary-color);
+  color: var(--light-gray-color);
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.testimonialsContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-family: "Markazi";
+  margin: 1rem 0 2rem 0;
+}
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Styles for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonialsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Styles for screens between 540px and 768px */
+@media (min-width: 540px) and (max-width: 768px) {
+  .testimonialsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 540px) {
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+}

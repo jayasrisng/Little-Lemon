@@ -1,0 +1,55 @@
+/* Meal Cards */
+.mealCard {
+  background-color: var(--light-gray-color);
+  height: fit-content;
+  
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mealImg {
+  width: 100%;
+  overflow: hidden;
+}
+.mealImg img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  height: 18rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.mealImg img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mealDetails {
+  padding: 1.5rem;
+}
+
+.mealDetailsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.mealDetailsHeader p {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+.mealDetailsDescription {
+  margin: 1.8rem 0;
+  line-height: 1.5;
+}
+
+.mealDetailsFooter {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

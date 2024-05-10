@@ -1,0 +1,10 @@
+.bookingPage h2 {
+  height: 120px;
+  background-color: var(--primary-color);
+  color: var(--light-gray-color);
+  font-size: 1.8rem;
+  font-family: "Markazi";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
